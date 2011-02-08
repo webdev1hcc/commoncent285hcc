@@ -17,6 +17,15 @@
     return $temp;
   }
   
+  function makePassword($data)
+  {
+    $prompt = $data['prompt'];
+    $name = $data['name'];
+    $temp = "      $prompt \n";
+    $temp .= "      <input type=\"password\" name=\"$name\"><br />\n";
+    return $temp;
+  }
+  
   /*
     This function makes a radio button question.  $data
     is an associative array with $data['prompt'] containing
